@@ -4,6 +4,7 @@ import {MdFingerprint} from 'react-icons/md'
 import {FaBars, FaTime} from 'react-icons/fa'
 
 function Navbar() {
+  const [click, setClick] = useState(false);
   return (
     <div>
       <div className="navbar">
@@ -12,15 +13,12 @@ function Navbar() {
             <MdFingerprint className='navbar-icon'/>
             LAVISH
           </Link>
-          <div className="menu-icon">
-
-
-
-          </div>
+          <div className="menu-icon"/>
+          {click ? <FaTimes/> : <FaBar/>}
         </div>
       </div>
     </div>
   )
 }
 
-export default Navbar
+export default Navbar;
