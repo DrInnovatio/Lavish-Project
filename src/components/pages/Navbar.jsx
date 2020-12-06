@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {MdFingerprint} from 'react-icons/md'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import {Button} from '../button'
+
 
 function Navbar() {
 
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click)
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false )
   
   return (
     <div>
@@ -53,7 +58,6 @@ function Navbar() {
                   </Link>
               ) }  
             </li>
-
             
           </ul>
         </div>
