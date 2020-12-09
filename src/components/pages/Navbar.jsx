@@ -38,26 +38,26 @@ function Navbar() {
           <ul className={ click ? 'nav-menu active' : 'nav-menu' }>
             
             <li className='nav-item'>
-              <Link tp='/' className='nav-link'>
+              <Link to='/' className='nav-links'>
                 Home
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link tp='/services' className='nav-link'>
+              <Link to='/services' className='nav-links'>
                 Services
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link tp='/products' className='nav-link'>
+              <Link to='/products' className='nav-links '>
                 Products
               </Link>
             </li>
             <li className="nav-btn">
               { button ? (
                 <Link to='/sign-up' className="btn-link">
-                  <Button buttonStyle="btn--outLine">
+                  <Button buttonStyle="btn--outline">
                     SIGN UP
                   </Button>
                 </Link>
