@@ -18,9 +18,9 @@ export const Button = ({
 
   const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
 
-  const checkButtonSize = STYLES.includes(buttonSize) ? buttonSize : STYLES[0];
+  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-  const checkButtonColor = STYLES.includes(buttonColor) ? buttonColor : null;
+  const checkButtonColor = COLOR.includes(buttonColor) ? buttonColor : null;
 
   return (
     <button className={ `btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}` }
@@ -28,4 +28,4 @@ export const Button = ({
   )
 }
 
-//  52:00
+//  
